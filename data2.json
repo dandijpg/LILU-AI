@@ -1,0 +1,253 @@
+{
+  "responses": [
+    {
+      "type": "greeting",
+      "content": ["Hai", "Halo", "Hei"],
+      "trigger": ["hi", "hai", "hallo", "selamat datang"],
+      "irregular_patterns": [
+        "/^(?:siapa|apa|dimana|kapan|mengapa|bagaimana)\\s(?:dia|mereka|itu|ini|saya|kamu|adakah|apakah)$/",
+        "/^(?:selamat|apa|siapa|kapan|dimana|kenapa)\\s(?:hari|malam|siang|pagi)$/"
+      ],
+      "negative_keywords": ["maksud", "siapa", "itu", "dia", "mereka", "ini", "itu", "apa", "kenapa", "dimanakah"],
+      "nouns": ["orang", "rumah", "mobil", "buku", "meja", "kursi", "kota", "negara", "hari", "malam", "waktu", "pekerjaan", "sistem", "komputer", "ilmu", "teknologi", "manfaat", "risiko", "perkembangan", "kehidupan", "masalah", "etika", "kesehatan", "pengalaman", "pendidikan"],
+      "verbs": ["adalah", "makan", "minum", "baca", "tulis", "pergi", "datang", "lihat", "berkembang", "memproses", "membuat", "meningkatkan", "menjelaskan", "menentukan", "menggunakan", "menerapkan", "menyelesaikan", "memperhatikan", "merasakan", "mendengar", "mencoba", "mendukung", "menemukan"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Halo", "Salam"],
+      "trigger": ["halo", "salam"],
+      "irregular_patterns": [
+        "/^(?:halo|hai|hallo|hey|hi)$/i",
+        "/^(?:selamat|apa|siapa|kapan|dimana|kenapa)\\s(?:hari|malam|siang|pagi)$/"
+      ],
+      "negative_keywords": ["selamat", "apa", "siapa", "kapan", "dimana", "kenapa", "bagaimana"],
+      "nouns": ["hari", "malam", "siang", "pagi"],
+      "verbs": ["berada", "datang", "pergi"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat Pagi", "Pagi yang cerah"],
+      "trigger": ["selamat pagi", "pagi"],
+      "irregular_patterns": [
+        "/^(?:selamat)\\s(?:pagi)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["pagi", "cerah"],
+      "verbs": ["bersemangat", "mulai"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat Siang", "Siang yang menyenangkan"],
+      "trigger": ["selamat siang", "siang"],
+      "irregular_patterns": [
+        "/^(?:selamat)\\s(?:siang)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["siang", "menyenangkan"],
+      "verbs": ["menikmati", "beristirahat"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat Sore", "Sore yang damai"],
+      "trigger": ["selamat sore", "sore"],
+      "irregular_patterns": [
+        "/^(?:selamat)\\s(?:sore)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["sore", "damai"],
+      "verbs": ["menikmati", "bersantai"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat Malam", "Malam yang tenang"],
+      "trigger": ["selamat malam", "malam"],
+      "irregular_patterns": [
+        "/^(?:selamat)\\s(?:malam)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["malam", "tenang"],
+      "verbs": ["beristirahat", "tidur"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat malam, semoga mimpi indah", "Selamat malam, tidur yang nyenyak"],
+      "trigger": ["selamat malam", "malam", "tidur"],
+      "irregular_patterns": [
+        "/^(?:selamat)\\s(?:malam)$/",
+        "/^(?:tidur)\\s(?:nyenyak)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["malam", "mimpi", "tidur"],
+      "verbs": ["semoga", "mimpi", "tidur"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat pagi, Tuan/Nyonya.", "Pagi yang cerah, Tuan/Nyonya."],
+      "trigger": ["selamat pagi tuan", "selamat pagi nyonya", "pagi pak", "pagi bu"],
+      "irregular_patterns": [
+        "/^(?:selamat\\s(?:pagi)\\s(?:tuan|nyonya|pak|bu))$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["pagi", "tuan", "nyonya", "pak", "bu"],
+      "verbs": ["sapa", "salam"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat siang yang cerah!", "Harapan untuk siang yang cerah!"],
+      "trigger": ["siang cerah", "siang yang baik"],
+      "irregular_patterns": [
+        "/^(?:siang)\\s(?:cerah|baik)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["siang", "cerah", "harapan"],
+      "verbs": ["harap", "menikmati"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat sore yang indah!", "Sore yang memanjakan!"],
+      "trigger": ["sore indah", "sore yang baik"],
+      "irregular_patterns": [
+        "/^(?:sore)\\s(?:indah|baik)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["sore", "indah"],
+      "verbs": ["menikmati", "memanjakan"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Selamat malam, semoga mimpi indah!", "Malam yang penuh dengan mimpi indah!"],
+      "trigger": ["malam mimpi indah", "selamat tidur"],
+      "irregular_patterns": [
+        "/^(?:malam)\\s(?:mimpi\\sindah)$/",
+        "/^(?:selamat)\\s(?:tidur)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["malam", "mimpi", "indah"],
+      "verbs": ["semoga", "mimpi"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, apa kabar?", "Bagaimana kabar Anda?"],
+      "trigger": ["apa kabar", "gimana", "kabar"],
+      "irregular_patterns": [
+        "/^(?:apa|bagaimana)\\s(?:kabar)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["kabar"],
+      "verbs": ["tanya"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, apa kabar hari ini?", "Bagaimana kabar Anda hari ini?"],
+      "trigger": ["kabar hari ini", "gimana hari ini"],
+      "irregular_patterns": [
+        "/^(?:apa|bagaimana)\\s(?:kabar)\\s(?:hari\\sini)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["kabar", "hari"],
+      "verbs": ["tanya"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, apa rencana hari ini?", "Apa yang akan Anda lakukan hari ini?"],
+      "trigger": ["rencana hari ini", "mau ngapain hari ini"],
+      "irregular_patterns": [
+        "/^(?:apa|rencana)\\s(?:hari\\sini)$/",
+        "/^(?:mau)\\s(?:ngapain)\\s(?:hari\\sini)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["rencana", "hari"],
+      "verbs": ["tanya", "rencana"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, apa yang sedang kamu kerjakan?", "Apa yang sedang Anda lakukan?"],
+      "trigger": ["lagi ngapain", "sedang apa"],
+      "irregular_patterns": [
+        "/^(?:lagi)\\s(?:ngapain)$/",
+        "/^(?:sedang)\\s(?:apa)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": [],
+      "verbs": ["kerjakan", "tanya"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, sudah makan?", "Apakah Anda sudah makan?"],
+      "trigger": ["sudah makan", "makan siang"],
+      "irregular_patterns": [
+        "/^(?:sudah)\\s(?:makan)$/",
+        "/^(?:makan)\\s(?:siang)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["makan"],
+      "verbs": ["tanya"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, semoga harimu menyenangkan!", "Semoga hari ini menyenangkan untuk Anda!"],
+      "trigger": ["semoga hari menyenangkan", "semoga hari baik"],
+      "irregular_patterns": [
+        "/^(?:semoga)\\s(?:hari)\\s(?:menyenangkan|baik)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["hari", "menyenangkan"],
+      "verbs": ["semoga", "harap"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, semoga harimu produktif!", "Semoga hari Anda produktif!"],
+      "trigger": ["semoga hari produktif", "semoga hari sukses"],
+      "irregular_patterns": [
+        "/^(?:semoga)\\s(?:hari)\\s(?:produktif|sukses)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["hari", "produktif"],
+      "verbs": ["semoga", "harap"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, semoga harimu berkah!", "Semoga hari Anda penuh berkah!"],
+      "trigger": ["semoga hari berkah", "semoga hari diberkati"],
+      "irregular_patterns": [
+        "/^(?:semoga)\\s(?:hari)\\s(?:berkah|diberkati)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["hari", "berkah"],
+      "verbs": ["semoga", "harap"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, aku sangat senang melihatmu!", "Sangat senang bertemu dengan Anda!"],
+      "trigger": ["senang melihatmu", "senang ketemu"],
+      "irregular_patterns": [
+        "/^(?:senang)\\s(?:melihatmu|ketemu)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": [],
+      "verbs": ["senang", "melihat", "bertemu"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, aku sedikit lelah hari ini...", "Hari ini aku merasa sedikit lelah..."],
+      "trigger": ["lelah", "capek"],
+      "irregular_patterns": [
+        "/^(?:lelah|capek)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["lelah", "capek"],
+      "verbs": ["merasa"]
+    },
+    {
+      "type": "greeting",
+      "content": ["Hai, aku merasa bersemangat!", "Aku merasa sangat bersemangat!"],
+      "trigger": ["bersemangat", "semangat"],
+      "irregular_patterns": [
+        "/^(?:bersemangat|semangat)$/"
+      ],
+      "negative_keywords": ["kenapa", "dimana", "kapan"],
+      "nouns": ["semangat"],
+      "verbs": ["merasa"]
+    }
+  ]
+}
