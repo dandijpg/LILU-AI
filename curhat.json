@@ -1,0 +1,147 @@
+{
+  "responses": [
+    {
+      "type": "curhat",
+      "content": ["Aku ikut sedih mendengarnya, lalu apa rencanamu hari ini?", "Aku merasa sedih juga mendengar itu, apa yang bisa kami lakukan untuk membuatmu merasa lebih baik?"],
+      "trigger": ["aku sangat sedih"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:sangat|sangatlah|benar-benar|sekali|amat)\\s(?:sedih|sedihnya|sedih banget)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["rencana", "hari"],
+      "verbs": ["mendengar", "rencanamu"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Sungguh menyedihkan, apakah kamu ingin cerita lebih banyak?", "Aku bisa dengarkan jika kamu ingin berbagi lebih banyak."],
+      "trigger": ["aku merasa sedih"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:merasa|rasa|merasakan)\\s(?:sedih|sedihnya|sedih banget)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": [],
+      "verbs": ["merasa", "cerita", "dengarkan"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Aku tahu itu berat, apakah ada yang bisa aku bantu?", "Mungkin ada sesuatu yang bisa kita coba bersama untuk mengatasi ini."],
+      "trigger": ["rasanya berat"],
+      "irregular_patterns": [
+        "/^(?:rasanya|rasaku|perasaanku)\\s(?:berat|berat sekali|berat banget)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": [],
+      "verbs": ["bantu", "coba", "mengatasi"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Aku paham, ini pasti membuatmu stres, bagaimana cara terbaik untuk menenangkan diri menurutmu?", "Stres bisa jadi melelahkan, apa yang biasanya membuatmu merasa lebih baik?"],
+      "trigger": ["aku stres"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:stres|stres banget|stres sekali)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["stres", "cara"],
+      "verbs": ["menenangkan", "merasa"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Kadang waktu sendiri bisa menyembuhkan, apakah kamu butuh waktu untuk dirimu sendiri?", "Jangan ragu untuk mengambil waktu untuk dirimu."],
+      "trigger": ["butuh waktu sendiri"],
+      "irregular_patterns": [
+        "/^(?:butuh|perlu|memerlukan)\\s(?:waktu|sedikit waktu|saja waktu)\\s(?:sendiri|untuk diriku)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["waktu"],
+      "verbs": ["butuh", "mengambil"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Patah hati itu sulit, tapi kamu akan melewati ini, apa yang ingin kamu lakukan sekarang?", "Patah hati bisa membuatmu merasa kosong, tapi ingat, waktu akan menyembuhkan."],
+      "trigger": ["aku patah hati"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:patah|tersakiti|tersakit)\\s(?:hati|hatiku)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["hati"],
+      "verbs": ["melewati", "menyembuhkan"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Menangis itu normal, apakah kamu ingin bicara tentang perasaanmu?", "Terkadang menangis bisa membantu mengeluarkan beban di hati."],
+      "trigger": ["aku menangis"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:menangis|menangis terus|menangis lagi)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": [],
+      "verbs": ["menangis", "bicara"]
+    },
+        {
+      "type": "curhat",
+      "content": ["Kamu tidak sendiri, kita semua pernah merasakan rasa takut, apa yang membuatmu takut?", "Menghadapi ketakutan memang menantang, ada apa yang ingin kamu bicarakan?"],
+      "trigger": ["aku takut"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:takut|ketakutan)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["ketakutan"],
+      "verbs": ["merasakan", "menghadapi"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Merasa kesepian itu wajar, ada yang ingin kamu ceritakan?", "Kesepian bisa menjadi berat, tapi kita bisa coba mengatasi bersama."],
+      "trigger": ["aku kesepian"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:kesepian|sepi|merasa sepi)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["kesepian"],
+      "verbs": ["merasa", "ceritakan"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Terkadang merasa gagal adalah bagian dari proses belajar, apa yang bisa kita pelajari dari ini?", "Gagal tidak berarti akhir dari segalanya, ada yang bisa aku bantu?"],
+      "trigger": ["aku merasa gagal"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:merasa|rasa|merasakan)\\s(?:gagal|gagal banget)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["proses", "belajar"],
+      "verbs": ["merasa", "pelajari"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Rasa marah itu normal, apa yang membuatmu marah?", "Marah itu reaksi yang wajar, ada yang ingin kita bahas lebih lanjut?"],
+      "trigger": ["aku marah"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:marah|marah sekali|marah banget)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": [],
+      "verbs": ["marah"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Kecewa itu berat, tapi kita bisa belajar dari kekecewaan, apa yang bisa kita lakukan dari sini?", "Kekecewaan memang menyakitkan, apakah kamu ingin berbagi lebih lanjut?"],
+      "trigger": ["aku kecewa"],
+      "irregular_patterns": [
+        "/^(?:aku|saya|gue|gw|diriku)\\s(?:kecewa|kecewa banget|kecewa sekali)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["kekecewaan"],
+      "verbs": ["belajar", "berbagi"]
+    },
+    {
+      "type": "curhat",
+      "content": ["Jangan ragu untuk menceritakan segala yang ada di pikiranmu, apa yang sedang kamu pikirkan?", "Aku di sini untuk mendengarkan, apa yang ada di pikiranmu?"],
+      "trigger": ["banyak pikiran"],
+      "irregular_patterns": [
+        "/^(?:banyak|terlalu banyak|begitu banyak)\\s(?:pikiran|pikiran negatif|pikiran berat)$/i"
+      ],
+      "negative_keywords": ["jangan", "tidak", "bukan"],
+      "nouns": ["pikiran"],
+      "verbs": ["menceritakan", "mendengarkan"]
+}
+    ]
+}
